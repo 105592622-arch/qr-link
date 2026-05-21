@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三张二维码</title>
+    <title>太仓劲力商贸有限公司</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-weight: bold !important; /* 全部字体加粗 */
         }
         body {
             background: #f7f7f7;
@@ -16,7 +17,7 @@
             font-family: Arial, sans-serif;
         }
         .box {
-            max-width: 560px; /* 比图片宽一点，留出边距 */
+            max-width: 560px;
             margin: 0 auto;
         }
         .item {
@@ -27,11 +28,10 @@
             text-align: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
-        /* 核心修改：适配540×260的图片 */
         .item img {
             width: 100%;
-            max-width: 540px; /* 限制最大宽度为图片原尺寸 */
-            height: auto; /* 自动按比例调整高度，防止变形 */
+            max-width: 540px;
+            height: auto;
             border-radius: 6px;
             display: block;
             margin: 0 auto;
@@ -41,24 +41,37 @@
             color: #666;
             font-size: 14px;
         }
+        .contact {
+            margin-top: 40px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .contact p {
+            font-size: 18px;
+            color: #e74c3c;
+        }
     </style>
 </head>
 <body>
     <div class="box">
-        <!-- 第一张图 -->
         <div class="item">
-            <img src="img1.png" alt="二维码一">
-            <p class="txt">二维码一</p>
+            <img src="img1.png" alt="淘宝">
+            <p class="txt">淘宝</p>
         </div>
-        <!-- 第二张图 -->
         <div class="item">
-            <img src="img2.png" alt="二维码二">
-            <p class="txt">二维码二</p>
+            <img src="img2.png" alt="小红书">
+            <p class="txt">小红书</p>
         </div>
-        <!-- 第三张图 -->
         <div class="item">
-            <img src="img3.png" alt="二维码三">
-            <p class="txt">二维码三</p>
+            <img src="img3.png" alt="抖音">
+            <p class="txt">抖音</p>
+        </div>
+
+        <div class="contact">
+            <p>车店合作联系方式：0512-53289080</p>
         </div>
     </div>
 </body>
